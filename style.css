@@ -1,0 +1,386 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(78, 71, 255);
+}
+
+.sign-up {
+    background-color: rgb(78, 71, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.sign-up::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.sign-up:hover::before {
+    width: 100%;
+}
+
+.sign-up:hover {
+    transform: translateY(-2px);
+}
+
+.hero {
+    text-align: center;
+    padding: 20px 0 100px 0;
+    background-image: url('assets/Hero-bg.png');
+    background-size: cover;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: rgb(78, 71, 255);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.hero button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.hero button:hover::before {
+    width: 100%;
+}
+
+.hero button:hover {
+    transform: translateY(-2px);
+}
+
+.see-it-in-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* background-color: white; */
+}
+
+.see-it-in-action .text {
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.see-it-in-action h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.see-it-in-action button {
+    background-color: rgb(78, 71, 255);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.see-it-in-action button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.see-it-in-action button:hover::before {
+    width: 100%;
+}
+
+.see-it-in-action button:hover {
+    transform: translateY(-2px);
+}
+
+.see-it-in-action .image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.stats {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0e8ff;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.stats h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.stat-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat h3 {
+    font-size: 48px;
+    color: rgb(78, 71, 255);
+    margin: 0;
+}
+
+.testimonials {
+    padding: 50px;
+    /* background-color: white; */
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonial-items {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    max-width: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    text-align: left;
+    background-color: white;
+}
+
+/* .stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+} */
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reviewer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ready-to-focus {
+    text-align: center;
+    padding: 100px 50px;
+    background-color: #f8f9fa;
+}
+
+.ready-to-focus h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.ready-to-focus button {
+    background-color: rgb(78, 71, 255);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.ready-to-focus button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.ready-to-focus button:hover::before {
+    width: 100%;
+}
+
+.ready-to-focus button:hover {
+    transform: translateY(-2px);
+}
+
+.ready-to-focus img {
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    /* padding-left: 350px; */
+    /* background-color: white; */
+}
+
+.contact-text h2 {
+    font-size: 56px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-text {
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+}
+
+form button {
+    background-color: rgb(78, 71, 255);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+form button:hover::before {
+    width: 100%;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    /* background-color: #f8f9fa; */
+    background-color: white;
+}
+
+footer .logo {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer nav a {
+    text-decoration: none;
+    /* color: inherit; */
+    color: rgb(78, 71, 255);
+    margin: 0 10px;
+}
+
+
